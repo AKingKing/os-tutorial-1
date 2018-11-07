@@ -11,6 +11,9 @@ static void timer_callback(registers_t regs) {
     
     char tick_ascii[256];
     int_to_ascii(tick, tick_ascii);
+    /*
+     void kprint(char *message)
+     */
     kprint(tick_ascii);
     kprint("\n");
 }
