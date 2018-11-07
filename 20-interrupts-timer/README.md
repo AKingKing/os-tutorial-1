@@ -9,7 +9,7 @@ Timer
 
 The timer is easy to configure. First we'll declare an `init_timer()` on `cpu/timer.h` and
 implement it on `cpu/timer.c`. It is just a matter of computing the clock frequency and
-sending the bytes to the appropriate ports.
+sending the bytes to the appropriate ports.//20h A0h 21h A1h 
 
 We will now fix `kernel/utils.c int_to_ascii()` to print the numbers in the correct order.
 For that, we need to implement `reverse()` and `strlen()`.

@@ -13,7 +13,7 @@ void memory_set(u8 *dest, u8 val, u32 len) {
 }
 
 /**
- * K&R implementation
+ * K&R implementation  245 -> 50 40 20 -> 02 04 05
  */
 void int_to_ascii(int n, char str[]) {
     int i, sign;

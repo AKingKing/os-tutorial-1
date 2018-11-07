@@ -42,7 +42,7 @@ void isr_install() {
     set_idt_gate(30, (u32)isr30);
     set_idt_gate(31, (u32)isr31);
 
-    // Remap the PIC
+    // Remap the PIC http://way4ever.com/?p=71
     port_byte_out(0x20, 0x11);
     port_byte_out(0xA0, 0x11);
     port_byte_out(0x21, 0x20);

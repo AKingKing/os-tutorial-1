@@ -19,6 +19,7 @@ void init_keyboard() {
    register_interrupt_handler(IRQ1, keyboard_callback); 
 }
 
+/* http://againinput4.blog.163.com/blog/static/172799491201192110540166/ */
 void print_letter(u8 scancode) {
     switch (scancode) {
         case 0x0:
